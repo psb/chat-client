@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Chat with JSON!</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http:////cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.2/underscore-min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/Messages.js"></script>
+  <script type="text/javascript" src="js/SendMessageView.js"></script>
+  <script type="text/javascript" src="js/AllMessagesView.js"></script>
+  <script type="text/javascript" src="js/MessageView.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- <script type="text/javascript" src="js/chat.js"></script> -->
+</head>
+
+<body>
+  
+  <div id="main">
+    <h1>Chat with JSON!</h1>
+    <form id="inputMessage">
+      <li>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required autofocus>
+      </li>
+      <li>
+        <label for="inputMessage">Message</label>
+        <textarea id="inputMessage" name="inputMessage" required></textarea>
+      </li>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+  <div id="messages">
+    <h1>Messages</h1>
+  </div>
+</html>
